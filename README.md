@@ -1,5 +1,5 @@
 # DVWA
-Javascript Vulnerability - Low Python3 Program
+DVWA - Security Low Python3 Programs
 
 ## Disclaimer
 

